@@ -1,0 +1,33 @@
+Task 8: Theme
+Theming in CSS:
+Theming allows for the design to change dynamically (e.g., light vs. dark mode) based on user preference.
+
+Example of a Simple Theme Switcher in Sass:
+scss
+Copy code
+$light-bg: white;
+$dark-bg: black;
+$light-text: black;
+$dark-text: white;
+
+body {
+    background-color: $light-bg;
+    color: $light-text;
+
+    &.dark-theme {
+        background-color: $dark-bg;
+        color: $dark-text;
+    }
+}
+
+// Compiled CSS
+body {
+    background-color: white;
+    color: black;
+}
+body.dark-theme {
+    background-color: black;
+    color: white;
+}
+Utilizing Variables:
+Using variables for colors ensures consistency across themes. Changes can be made in one place, affecting all relevant styles.

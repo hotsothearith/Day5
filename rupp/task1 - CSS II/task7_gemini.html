@@ -1,0 +1,33 @@
+Task 7: Grid System and Breakpoints
+
+A CSS grid system provides a flexible way to create responsive layouts that adapt to different screen sizes. Bootstrap's grid system is based on a 12-column grid, and you can use media queries to adjust the grid's behavior at different breakpoints.
+
+Example:
+
+SCSS
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-sm-4 {
+  flex: 0 0 auto;
+  width: 33.33333%;
+}
+
+@media (max-width: 768px) {
+  .col-sm-4 {
+    width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .col-sm-4 {
+    width: 100%;
+  }
+}

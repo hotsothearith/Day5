@@ -1,0 +1,39 @@
+Task 4: Variables, Functions, and Inheritance
+Variables in Sass:
+Variables in Sass are declared with a $ and can hold values like colors, font sizes, etc.
+
+Functions in Sass:
+Sass allows defining functions to perform calculations or return values.
+
+Inheritance:
+Sass supports inheritance through @extend, allowing one selector to inherit the styles of another.
+
+Example:
+scss
+Copy code
+$base-padding: 10px;
+
+@mixin card {
+    padding: $base-padding;
+    border: 1px solid #ccc;
+}
+
+.card {
+    @include card;
+}
+
+.alert {
+    @extend .card;
+    background-color: red;
+}
+Compiled CSS:
+css
+Copy code
+.card, .alert {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.alert {
+    background-color: red;
+}

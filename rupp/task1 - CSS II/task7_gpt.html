@@ -1,0 +1,24 @@
+Task 7: Grid System and Breakpoints
+CSS Grid System:
+A grid system helps create layouts by dividing the page into rows and columns. Frameworks like Bootstrap simplify this with pre-defined classes.
+
+Example of a Responsive Layout with Breakpoints:
+html
+Copy code
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6">Column 1</div>
+        <div class="col-12 col-md-6">Column 2</div>
+    </div>
+</div>
+Explanation of Breakpoints:
+col-12: Full width on extra small devices.
+col-md-6: Half width on medium devices and above.
+Media Queries Example:
+css
+Copy code
+@media (max-width: 768px) {
+    .example {
+        font-size: 14px;
+    }
+}

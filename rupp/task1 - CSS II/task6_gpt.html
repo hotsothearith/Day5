@@ -1,0 +1,48 @@
+<!-- ask 6: Components
+Concept of Components:
+Components are reusable pieces of code that encapsulate styles and functionality. They enhance maintainability and reusability in projects.
+
+Example of a Card Component in Sass:
+scss
+Copy code -->
+// card.scss
+$card-padding: 20px;
+
+.card {
+    padding: $card-padding;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+
+    .image {
+        max-width: 100%;
+    }
+
+    .title {
+        font-size: 1.5em;
+        margin: 10px 0;
+    }
+
+    .description {
+        color: gray;
+    }
+}
+
+// Compiled CSS
+.card {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.card .image {
+    max-width: 100%;
+}
+.card .title {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+.card .description {
+    color: gray;
+}
+<!-- Component Structure:
+Each component can be stored in a separate file, promoting better organization.
+Components can use variables, mixins, and functions to maintain consistent styling. -->

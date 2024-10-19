@@ -1,0 +1,28 @@
+Task 3: Sass Basics
+What is Sass?
+Sass is a CSS preprocessor that adds features like variables, nesting, and mixins to standard CSS. It improves code organization and reusability.
+
+Differences from Regular CSS:
+Nesting: Styles can be nested inside other styles.
+Variables: Store values to use throughout the stylesheet.
+Example of a Sass File:
+scss
+Copy code
+// styles.scss
+$primary-color: blue;
+
+.header {
+    background-color: $primary-color;
+
+    .logo {
+        height: 50px;
+    }
+}
+
+// Compiled CSS
+.header {
+    background-color: blue;
+}
+.header .logo {
+    height: 50px;
+}

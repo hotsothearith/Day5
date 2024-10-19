@@ -1,0 +1,40 @@
+Task 3: Sass Basics
+
+Sass is a CSS extension language that adds features like variables, nesting, mixins, and functions to CSS. It offers a more flexible and powerful way to write stylesheets.
+
+Differences from regular CSS:
+
+Nesting: Sass allows you to nest selectors within each other, improving code organization and readability.
+Variables: You can define variables to store values like colors, fonts, and dimensions, making it easier to manage styles.
+Mixins: Mixins are reusable code blocks that can be included in other stylesheets, reducing redundancy.
+Imports: You can import external Sass files into your main stylesheet, promoting modularity and organization.
+Example:
+
+SCSS
+// Sass code
+// _button.scss (partial)
+.button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+// main.scss
+@import "button";
+
+.primary-button {
+  background-color: blue;
+  color: white;
+}
+
+// Compiled CSS
+.button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.primary-button {
+  background-color: blue;
+  color: white;
+}
